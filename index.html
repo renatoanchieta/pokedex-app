@@ -17,8 +17,20 @@
   <section class="content">
 
     <div class="topbar">
-      <h1 class="pokedex-title">Pokedex</h1>
+      <h1 class="pokedex-title">Pokedex</h1>      
       <img src="assets/images/pokebola.png" alt="Pokebola">
+    </div>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Buscar Pokémon..."
+        class="search-bar"
+      />
+      <button id="searchButton" class="search-icon-button">
+        <img src="assets/images/lupa.png" alt="Buscar">
+      </button>
     </div>
 
     <ol id="pokemonList" class="pokemons">
@@ -33,6 +45,10 @@
   <footer class="footer">
     <p>Created By <a href="https://www.renatoanchieta.com.br" target="_blank">Renato Anchieta</a></p>
   </footer>
+
+  <p id="noResultsMessage" class="no-results" style="display: none;">
+    Nenhum Pokémon encontrado.
+  </p>
 
   </section>
 
